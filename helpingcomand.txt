@@ -1,0 +1,7 @@
+starting app with vite =  npm create vite@latest
+
+
+running app =  
+cd mestrosfrontend
+  npm install
+  npm run dev
