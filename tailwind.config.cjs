@@ -1,22 +1,3 @@
-starting app with vite =  npm create vite@latest
-
-
-running app =  
-cd mestrosfrontend
-  npm install
-  npm run dev
-
-
-  #adding tail wind comands
-
-  npm install -D tailwindcss postcss autoprefixer
-  npx tailwindcss init -p
-
-
-
-#tailwind config.js file content
-
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", '.index.html'],
@@ -64,18 +45,3 @@ module.exports = {
   plugins: [],
 }
 };
-
-#postcss.config.js
-
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
-
-
-
-
-
-
