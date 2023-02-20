@@ -49,9 +49,9 @@
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #161616 -278.56%,
+    #090909 -78.47%,
+    #2a2a2b 91.61%
   );
 }
 
@@ -232,4 +232,9 @@
 }
 .react-pdf__Page{
   width: 100px;
+}
+#video{
+  z-index: -1;
+  width: 100%;
+  position: fixed;
 }
