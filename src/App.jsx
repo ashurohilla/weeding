@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
 import './App.css'
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
 
   return (
     <div className="App ">
-      <h1 className='text-gradient'>hello guys</h1>
+      <Navbar/>
+      <Home/>
     </div>
   )
 }
