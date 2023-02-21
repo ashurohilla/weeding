@@ -7,7 +7,7 @@ import gif5 from "../assets/fashion_gif/gif_5.gif";
 
 function About() {
   return (
-    <div className="max-w-[1320px] mx-auto " id='product'>
+    <div className="max-w-[1320px] mx-auto " id='about'>
       <h1 className='text-4xl text-center py-5'>
         Featured Products
       </h1>

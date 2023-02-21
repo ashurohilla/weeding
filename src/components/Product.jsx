@@ -10,7 +10,7 @@ import img11 from "../assets/Images/11.webp";
 
 function Product() {
   return (
-  <div className=" mx-auto  justify-center item-center " id='about'>
+  <div className=" mx-auto  justify-center item-center " id='product'>
     <h1 className=' pt-32 flex md:text-4xl sm:text-3xl ss:text-2xl text-sm  text-white justify-center item-center'>Fashion is like eating, you shouldn't stick to the same menu </h1>  
 <div className="max-w-[1320px] grid md:grid-cols-4  sm:grid-cols-3 ss:grid-cols-2 xs:grid-cols-1 grid-flow-row gap-4 mx-auto px-[20px] mt-10">
 <div className=' shadow-lg overflow-hidden'>
