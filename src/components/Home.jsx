@@ -8,18 +8,31 @@ function Home() {
     <div className='mt-[px] md:mt-[300px] sm:mt-[180px] ss:mt-[110px] '  >
      <CarouselProvider
         naturalSlideWidth={50}
-        naturalSlideHeight={25}
-        totalSlides={3}
+        naturalSlideHeight={20}
+        totalSlides={4}
       >
-     <div className=''>
      <Slider>
-          <Slide index={0}><img className='w-44' src={image1} alt="image1" /></Slide>
-          <Slide index={1}><img className='w-44' src={image2} alt="image2" /></Slide>
-          <Slide index={2}><img className='w-44' src={image1} alt="image3" /></Slide>
+          <Slide index={0}><div className='item-center justify-center flex'>
+          <img className='  flex mt-14 w-96 h-[420px]' src={image1} alt="image1" />
+          </div>
+          </Slide>
+          <Slide index={1}><div className='item-center justify-center flex'>
+          <img className='  flex mt-14 w-96 h-[420px]' src={image1} alt="image1" />
+          </div>
+          </Slide>
+          <Slide index={2}><div className='item-center justify-center flex'>
+          <img className='  flex mt-14 w-96 h-[420px]' src={image2} alt="image1" />
+          </div>
+          </Slide>
+          <Slide index={3}><div className='item-center justify-center flex'>
+          <img className='  flex mt-14 w-96 h-[420px]' src={image2} alt="image1" />
+          </div></Slide>
+
         </Slider>
-     </div>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+     
+      <div className='flex items-center justify-center mt-5'>  <ButtonBack><span className=' text-2xl project-button py-2 px-2 text-white mx-2'>Back</span></ButtonBack>
+        <ButtonNext><span className=' text-2xl project-button py-2 px-2 text-white mx-2'>Next</span></ButtonNext>
+        </div>
       </CarouselProvider>
     </div>
   )

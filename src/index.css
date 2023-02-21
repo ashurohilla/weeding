@@ -195,8 +195,8 @@
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 .project-button{
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    border: 1.7px solid rgba(141, 138, 142, 0.637) !important;
+    box-shadow: 0 4px 5px 3px rgba(159, 159, 159, 0.459) !important;
     opacity: 0.9 !important;
     font-size: 1em !important;
     border-radius: 5px;
@@ -206,7 +206,7 @@
 .project-button:hover {
   transform: scale(1.2) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(168, 166, 169, 0.883) !important;
 }
 .resume-button{
    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;

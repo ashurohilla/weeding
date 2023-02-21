@@ -8,19 +8,32 @@ import gif5 from "../assets/fashion_gif/gif_5.gif";
 function About() {
   return (
     <div className="max-w-[1320px] mx-auto " id='about'>
-      <h1 className='text-4xl text-center py-5'>
-        Featured Products
+      <h1 className='text-4xl text-center py-5 text-white'>
+        About US
       </h1>
       <div>
-        <h2 className='text-4xl  py-5'>
+        <h2 className='text-4xl py-5 justify-center items-center flex gap-12 text-white'>
         A moment of light fashion, this trend has all of the fun.
         </h2>
-        <img  className =" h-100" src={gif1} alt="fashion">
+        <div className='grid md:grid-cols-2 grid-cols-1 mt-10  mx-auto'>
+        <div className='text-2xl md:text-3xl text-white'>
+           <h1>
+            what w edo  what can we do we 
+
+           </h1>
+           <h2>
+            we selll premium products where we are listed
+           </h2>
+           <h3>
+            here we transmit data
+           </h3>
+          </div>
+          <div className='flex'>
+          <img  className ="w-full py-10" src={gif1} alt="fashion">
         </img>
-        {/* <img className =" h-100" src={gif2} alt="" />
-          <img className =" h-100" src={gif3} alt="" />
-          <img className =" h-100" src={gif4} alt="" />
-          <img className =" h-100" src={gif5} alt="" /> */}
+          </div>
+         
+        </div>
       </div>
     </div>
   )
