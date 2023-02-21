@@ -8,9 +8,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-     <div className='grid sm:grid-cols-2  grid-cols-1 grid-flow-cols justify-center items-center  px-2 pb-5 bg-gradient rounded-lg'>
+     <div className='grid sm:grid-cols-2  grid-cols-1 grid-flow-cols justify-center items-center bg-black-gradient px-2 pb-5  rounded-lg'>
       <div className='flex text-white md:text-2xl  xs:text-xl text-lg justify-center mt-3 '>
-        <h3 className=''> Developed by Team </h3>
+        <h3 className=''> Developed by CodeBuzz </h3>
       </div>
       <div className='justify-center items-center text-white mt-3  md:text-2xl  xs:text-1xl text-lg'>
         <ul className='flex justify-center'>

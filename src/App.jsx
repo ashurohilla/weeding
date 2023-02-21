@@ -1,36 +1,38 @@
 import React from 'react'
-import {Navbar , Hero, Home,About ,Product, Footer  } from "./components"
+import {Navbar ,Hero, Home,About ,Product, Footer } from "./components"
 import styles from "../Style"
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { walking} from './assets'
+import Particles from './components/particle'
 import './App.css'
 
 function App() {
 
   return (
     <div className="App ">
-     <Router>
-    <div className=' w-full overflow-hidden '>
+      <Particles/>
+    <div className=' w-full overflow-hidden ' id='Home'>
         <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
           <Navbar />
-          <Routes>
-            <Route path="/product" element={<Product />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<Navigate to="/"/>} />   
-            </Routes>
+          <div className='video xs:mt-[10px] w-full'>
+     <video autoPlay loop muted id ='video' >
+        <source src={walking} type = 'video/mp4' />
+      </video>
+      
+          <Hero/>
+     </div>
+        
+       <div className='bg-black-gradient'>
+       <Home/>
+          <Product/>
+          <About/>
+       </div>
             </div>  
         </div>
         <div className={`${styles.boxWidth}`}>
                   <Footer /> 
             </div>
     </div> 
-    </Router>
     </div>
   )
 }

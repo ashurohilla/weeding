@@ -1,11 +1,7 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 import  {close, logo ,menu} from "../assets";
 import { navLinks } from "../constant";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-} from "react-icons/ai";
 
 
 const Navbar = () => {
@@ -26,7 +22,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           > 
-          <span className="flex felx-row">   <span className="mx-1 pt-1"><nav.icon /></span><Link as = {Link} to={nav.id}> {" "}{nav.title}</Link></span>
+          <span className="flex felx-row">   <span className="mx-1 pt-1"><nav.icon /></span><a href={nav.id}> {" "}{nav.title}</a></span>
            
           </li>
         ))}
@@ -53,7 +49,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-          <span className="mx-1 pt-1"><nav.icon/></span> <Link as = {Link} to={nav.id}> {" "}{nav.title}</Link>
+          <span className="mx-1 pt-1"><nav.icon/></span><a href={nav.id}>{" "}{nav.title}</a>
                
               </li>
             ))}

@@ -3,23 +3,28 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlinePaperClip,
+  AiOutlineShoppingCart,
 } from "react-icons/ai";
 export const navLinks = [
   {
-    id: "/",
+    id: "#Home",
     icon: AiOutlineHome,
     title: "Home",
   },
   {
-    id: "/Product",
+    id: "#product",
     icon: AiOutlineFundProjectionScreen,
     title: "Products",
   },
   {
-    id: "/about",
+    id: "#about",
     icon: AiOutlineUser,
     title: "About",
+  },
+  {
+    id: "cart",
+    icon: AiOutlineShoppingCart,
+    title: "Cart",
   },
 ];
 export const project=[

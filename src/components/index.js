@@ -6,12 +6,11 @@ import About from "./About";
 import Product from "./Product";
 
 
-
 export{
     Navbar,
     Hero,
     Home,
     Footer,
     About,
-    Product
+    Product,
 }
