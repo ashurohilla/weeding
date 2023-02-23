@@ -5,7 +5,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 function Home() {
   return (
-    <div className='mt-[px] md:mt-[300px] sm:mt-[180px] ss:mt-[110px] '  >
+    <div className='mt-[10px] md:mt-[300px] sm:mt-[180px] ss:mt-[110px]  '  >
      <CarouselProvider
         naturalSlideWidth={50}
         naturalSlideHeight={20}
@@ -13,7 +13,7 @@ function Home() {
       >
      <Slider>
           <Slide index={0}><div className='item-center justify-center flex'>
-          <img className='  flex mt-14 w-96 h-[420px]' src={image1} alt="image1" />
+          <img className='  flex mt-14 md:w-96 md:h-[420px] w-[300px] h-[400px]' src={image1} alt="image1" />
           </div>
           </Slide>
           <Slide index={1}><div className='item-center justify-center flex'>
