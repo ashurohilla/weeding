@@ -28,8 +28,8 @@ export default function Example() {
     return (
       <div className="max-w-screen-xl mx-auto">
         <div className="relative ">
-          <div className="w-[1400px] h-[800px]">
-          <img src={images[currentIndex]} alt="Carousel Slide" className=" w-[1400px] h-[800px] flex justify-center items-center"  />
+          <div className="lg:w-[1400px] lg:h-[800px]   xs:w-[600px] xs:h-[600px] justify-center mt-4">
+          <img src={images[currentIndex]} alt="Carousel Slide" className=" lg:w-[1400px] lg:h-[800px] xs:w-[600px] xs:h-[600px] flex justify-center items-center"  />
           </div>
   
           <button

@@ -55,8 +55,10 @@ function Home() {
       </div>
     </div>
   </div>
-
-  <Product/>
+<div className='mr-0'>
+<Product/>
+</div>
+  
     </div>
     
     </div>

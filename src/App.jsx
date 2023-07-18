@@ -23,7 +23,7 @@ function App() {
           <Hero/>
      </div>
         
-       <div className='bg-black-gradient'>
+       <div className='bg-primary'>
        <Home/>
           <About/>
           <Contactus/>
