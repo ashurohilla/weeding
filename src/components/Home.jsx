@@ -1,39 +1,64 @@
 import React from 'react'
-import image1 from '../assets/Images/1.webp'
-import image2 from '../assets/Images/2.webp'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import image1 from '../assets/Images/image4.jpeg';
+import image2 from '../assets/Images/image7.jpeg';
+import image3 from '../assets/Images/image3.jpeg';
+import image4 from '../assets/Images/image4.jpeg';
+import image5 from '../assets/Images/image5.jpeg';
+import image6 from '../assets/Images/image6.jpeg';
+import Example from './Carouselslider';
+import Product from './Product';
 function Home() {
   return (
-    <div className='mt-[10px] md:mt-[300px] sm:mt-[180px] ss:mt-[110px]  '  >
-     <CarouselProvider
-        naturalSlideWidth={50}
-        naturalSlideHeight={20}
-        totalSlides={4}
-      >
-     <Slider>
-          <Slide index={0}><div className='item-center justify-center flex'>
-          <img className='  flex mt-14 md:w-96 md:h-[420px] w-[300px] h-[400px]' src={image1} alt="image1" />
-          </div>
-          </Slide>
-          <Slide index={1}><div className='item-center justify-center flex'>
-          <img className='  flex mt-14 w-96 h-[420px]' src={image1} alt="image1" />
-          </div>
-          </Slide>
-          <Slide index={2}><div className='item-center justify-center flex'>
-          <img className='  flex mt-14 w-96 h-[420px]' src={image2} alt="image1" />
-          </div>
-          </Slide>
-          <Slide index={3}><div className='item-center justify-center flex'>
-          <img className='  flex mt-14 w-96 h-[420px]' src={image2} alt="image1" />
-          </div></Slide>
+    <div className='mt-[10px] md:mt-[300px] sm:mt-[180px] ss:mt-[110px]  '  id='product' >
+      <h1  className='text-5xl flex justify-center text-white px-2 py-4 ' > 
+        Gallery
+      </h1>
+    <div className='mx-10'>
+    <div className="-m-1 flex flex-wrap md:-m-2 ">
+    <div className="flex w-1/2 flex-wrap">
+      <div className="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image1} />
+      </div>
+      <div className="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image2} />
+      </div>
+      <div className="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image3} />
+      </div>
+    </div>
+    <div className="flex w-1/2 flex-wrap">
+      <div className="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image4} />
+      </div>
+      <div className="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image5}/>      </div>
+      <div className="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={image6} />
+      </div>
+    </div>
+  </div>
 
-        </Slider>
-     
-      <div className='flex items-center justify-center mt-5'>  <ButtonBack><span className=' text-2xl project-button py-2 px-2 text-white mx-2'>Back</span></ButtonBack>
-        <ButtonNext><span className=' text-2xl project-button py-2 px-2 text-white mx-2'>Next</span></ButtonNext>
-        </div>
-      </CarouselProvider>
+  <Product/>
+    </div>
+    
     </div>
   )
 }

@@ -14,17 +14,12 @@ export const navLinks = [
   {
     id: "#product",
     icon: AiOutlineFundProjectionScreen,
-    title: "Products",
+    title: "Gallery"
   },
   {
     id: "#about",
     icon: AiOutlineUser,
     title: "About",
-  },
-  {
-    id: "cart",
-    icon: AiOutlineShoppingCart,
-    title: "Cart",
   },
 ];
 export const project=[

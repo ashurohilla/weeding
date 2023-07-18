@@ -1,8 +1,9 @@
 import React from 'react'
 import {Navbar ,Hero, Home,About ,Product, Footer } from "./components"
 import styles from "../Style"
-import { walking} from './assets'
+import { background} from './assets'
 import Particles from './components/particle'
+import Contactus from './components/Contactus'
 import './App.css'
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
         <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
           <Navbar />
-          <div className='video xs:mt-[10px] w-full'>
-     <video autoPlay loop muted id ='video' >
-        <source src={walking} type = 'video/mp4' />
+          <div className='video xs:mt-[20px] w-full'>
+     <video autoPlay loop muted id ='video' className='xs:mt-14 w-full' >
+        <source src={background} type = 'video/mp4' />
       </video>
       
           <Hero/>
@@ -24,8 +25,8 @@ function App() {
         
        <div className='bg-black-gradient'>
        <Home/>
-          <Product/>
           <About/>
+          <Contactus/>
        </div>
             </div>  
         </div>

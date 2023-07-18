@@ -3,6 +3,7 @@ import developer from "./developer1.gif"
 import menu from "./menu.svg";
 import logo from "./logo.png";
 import walking from "./Walking.mp4"
+import background from "./background.mp4";
 
 
 export{
@@ -11,4 +12,5 @@ export{
     menu,
     logo,
     walking,
+    background,
 };
